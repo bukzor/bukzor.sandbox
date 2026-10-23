@@ -1,7 +1,6 @@
 ---
 label: CREATE
 standing: user
-todo: true
 authority:
   address: "nih-tooling-deliberation (6008d1)"
   words: "My rough first draft: - create"
@@ -44,5 +43,7 @@ Afterwards the sandbox is a member, has a place, and has a checkout.
 >     parent is missing; `--parents` creates it, as `mkdir -p` does.
 > - The visibility flags are `gh repo create`'s own, required as `gh`
 >   requires them when it cannot prompt.
+> - The record's frontmatter is the one field `url:`, `gh`'s name for
+>   it, holding the URL `gh repo create` reports.
 > - The record is left unstaged, as `mkdir` leaves a directory
 >   untracked; adding and committing it is the operator's.
