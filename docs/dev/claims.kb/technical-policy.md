@@ -9,6 +9,7 @@ non-claim-tokens:
   - QUESTION
   - CI
   - README
+  - DRAFT
 ---
 
 # bukzor.sandbox -- technical policy
