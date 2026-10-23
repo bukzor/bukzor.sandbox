@@ -7,6 +7,8 @@ non-claim-tokens:
   - RFC
   - CLAUDE
   - QUESTION
+  - CI
+  - README
 ---
 
 # bukzor.sandbox -- technical policy
