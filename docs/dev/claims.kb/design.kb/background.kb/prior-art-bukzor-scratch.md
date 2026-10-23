@@ -1,6 +1,9 @@
 ---
 label: PRIOR_ART_SCRATCH
 standing: bare
+why:
+  - ../background.md
+  - ../goals.kb/graduation-is-a-rename.md
 ---
 
 # Prior art: bukzor/scratch

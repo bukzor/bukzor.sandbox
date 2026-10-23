@@ -1,6 +1,8 @@
 ---
 label: ANCESTOR_MEMORY
 standing: bare
+why:
+  - ../background.md
 ---
 
 # Claude Code loads CLAUDE.md from every ancestor directory

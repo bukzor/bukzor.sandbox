@@ -2,6 +2,8 @@
 label: SANDBOX_HOME
 standing: user
 authority: "user, 2026-10-23 (session sandbox-bootstrap): 'The purpose of this repo is to be a parent for many \"throw away\" \"sandbox\" repositories.'"
+why:
+  - ../mission.md
 ---
 
 # A home for work that has no home

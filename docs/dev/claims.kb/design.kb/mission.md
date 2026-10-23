@@ -1,6 +1,8 @@
 ---
 label: MISSION
 standing: user
+why:
+  - ../design.md
 ---
 
 # Mission

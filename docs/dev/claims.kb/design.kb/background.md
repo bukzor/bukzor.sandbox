@@ -1,6 +1,8 @@
 ---
 label: BACKGROUND
 standing: bare
+why:
+  - ../design.md
 ---
 
 # Background
