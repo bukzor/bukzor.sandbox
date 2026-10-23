@@ -1,0 +1,49 @@
+[project]
+name = "bukzor-sandbox"
+version = "0"
+description = "Workspace root: the parent repo's tooling lives in packages/"
+requires-python = ">=3.13"
+dependencies = ["bukzor-sandbox-tools"]
+
+[tool.uv]
+# The root is a workspace, not a distribution: `uv sync` installs the
+# members it depends on, and nothing is built from here.
+package = false
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[tool.uv.sources]
+bukzor-sandbox-tools = { workspace = true }
+
+[dependency-groups]
+dev = [
+  "black>=25.1.0",
+  "isort>=5.13.2",
+  "pre-commit>=4.3.0",
+  "pyright>=1.1.405",
+  "pytest>=8.4.2",
+  "pyupgrade>=3.19.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["packages"]
+python_classes = ["Describe*", "When*", "Test*"]
+python_functions = ["it_*", "test_*"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+analyzeUnannotatedFunctions = true
+reportIncompatibleMethodOverride = "error"
+pythonVersion = "3.13"
+enableTypeIgnoreComments = true
+reportPrivateUsage = "warning"
+reportConstantRedefinition = "error"
+reportIncompatibleVariableOverride = "error"
+reportMissingImports = "error"
+reportMissingTypeStubs = false
+exclude = [".venv", "__pycache__", "node_modules", "trash"]
+
+[tool.isort]
+profile = "black"

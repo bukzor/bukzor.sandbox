@@ -1,0 +1,28 @@
+[project]
+name = "bukzor-sandbox-tools"
+version = "0.1.0"
+description = "Operate bukzor.sandbox's sandboxes: the verbs, over gh and git"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "Buck Evan", email = "workitharder+pypi@gmail.com" }]
+requires-python = ">=3.13"
+classifiers = [
+  # Repo-local tooling. PyPI refuses any upload carrying this classifier;
+  # remove it if the package ever graduates.
+  "Private :: Do Not Upload",
+]
+dependencies = []
+
+[project.scripts]
+bukzor-sandbox = "bukzor_sandbox_tools.cli:main"
+
+[project.urls]
+Repository = "https://github.com/bukzor/bukzor.sandbox"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lib/bukzor_sandbox_tools"]
+exclude = ["**/*_test.py"]
