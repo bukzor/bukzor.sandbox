@@ -1,29 +1,25 @@
 ---
 label: BINDING
-standing: open
+standing: user
+authority:
+  address: "nih-tooling-deliberation (6008d1)"
+  words: "all looks good. approved."
+  about: "the ledger rendered in chat, RECORD and COLLOCATION signed ! within it"
 why:
-  - ../goals.kb/the-parent-stays-thin.md
-  - ../goals.kb/add-organization-remove-none.md
+  - binding.kb/llm-kb-record.md
+  - ../goals.kb/hierarchy.md
+  - ../../technical-policy.kb/location-independence.md
 ---
 
-# What binds a subordinate to the parent?
+# What binds a subordinate to the parent
 
-> [!QUESTION]
-> Undecided. An answer settles three things at once: whether the
-> parent carries a gitlink per sandbox, whether a sandbox is nested
-> on disk under the parent, and what the create, graduate, and
-> delete procedures must touch in the parent. The candidates are in
-> `binding.kb/`, chosen and declined alike once ruled; until then
-> nothing here is implemented.
+A sandbox is bound to the parent by a record file in the parent's
+`sandbox-repo.kb/` collection (`binding.kb/llm-kb-record.md`). The
+file's existence is the membership, its position in the collection is
+the sandbox's place in the hierarchy, and its frontmatter carries the
+metadata existence cannot.
 
-What any answer must provide:
-
-- an index: every sandbox findable from the parent
-- inherited documentation: an agent working in a sandbox sees the
-  parent's `CLAUDE.md`
-- a cheap create, and a graduate and a delete that leave no debris
-  in the parent
-
-What no answer needs to provide: a reproducible checkout of the whole
-set, or bulk commands across it. The first is an anti-goal for
-throwaways; the second is not yet a need.
+The candidates, chosen and declined, are in `binding.kb/`. The two
+constraints that decided among them: the hierarchy must be recorded
+somewhere GitHub cannot record it, and nothing in a sandbox may name
+the parent's location.

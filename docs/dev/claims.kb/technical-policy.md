@@ -5,6 +5,8 @@ why:
   - design.kb/goals.md
 non-claim-tokens:
   - RFC
+  - CLAUDE
+  - QUESTION
 ---
 
 # bukzor.sandbox -- technical policy

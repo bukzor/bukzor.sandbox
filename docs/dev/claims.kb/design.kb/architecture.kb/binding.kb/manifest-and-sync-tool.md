@@ -1,20 +1,37 @@
 ---
 label: MANIFEST_TOOL
-standing: open
+standing: user
+verdict: rejected
+authority:
+  address: "nih-tooling-deliberation (6008d1)"
+  words: "all looks good. approved."
+  about: "the ledger rendered in chat, each tool struck within it"
 why:
   - ../binding.md
+  - llm-kb-record.md
+  - ../../goals.kb/hierarchy.md
 ---
 
 # A manifest plus a multi-repo tool
 
-The parent holds a manifest listing its sandboxes, and a tool from the
-manifest-and-sync family (Android `repo`, `west`, `tsrc`, `mani`,
-`myrepos`) clones, lists, and runs commands across them.
+The parent would hold a manifest in some tool's format, and the tool
+would clone, list, and run commands across the set.
 
-Appeal: bulk commands across the set, and a reproducible checkout.
-Cost: a third tool to install and learn; nesting on disk, and so the
-inherited `CLAUDE.md`, depends on how the tool lays out clones.
+Rejected as a family: every member is a second record beside the kb
+record (`llm-kb-record.md`), carrying less per entry than a kb file
+can, in exchange for three prewritten operations that are a short
+`xargs` walk over the kb. Per tool, as of 2026-10-23:
 
-Would win if a bulk-command need shows up at bootstrap. The user
-reports disliking `repo` from prior experience; which behavior bit is
-not yet on record and would weigh here.
+- Android `repo` (brew core): manifest must live in its own git repo;
+  `repo sync` resets child checkouts by default.
+- `myrepos` / `mr` (brew core): config is executable shell, so any
+  `.mrconfig` outside the home directory must be listed in
+  `~/.mrtrust`; last release 2018.
+- `mani` (brew core, static Go binary): the closest fit, one YAML with
+  path, description, and tags per project, and still a second record
+  with flat-string metadata.
+- `gita` (brew core): record lives in `~/.config/gita`, outside the
+  parent.
+- `ghorg`: clones every topic match into one flat directory, by
+  construction. No hierarchy.
+- `vcstool`, `tsrc`, `meta`, `grm`: not in Homebrew core.

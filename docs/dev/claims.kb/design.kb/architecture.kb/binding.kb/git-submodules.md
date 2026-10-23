@@ -1,21 +1,24 @@
 ---
 label: SUBMODULES
-standing: agent
+standing: user
+verdict: rejected
+authority:
+  address: "nih-tooling-deliberation (6008d1)"
+  words: "all looks good. approved."
+  about: "the ledger rendered in chat, this claim struck within it"
 why:
   - ../binding.md
-  - ../../background.kb/claude-code-loads-ancestor-claude-md.md
+  - llm-kb-record.md
 ---
 
 # Git submodules, with lazily bumped pointers
 
-Each sandbox is a git submodule of the parent. The gitlink pointer is
-bumped lazily, when something outside the parent needs it current,
-never after every sandbox commit. The same policy already governs the
+Each sandbox would be a git submodule of the parent, its gitlink
+pointer bumped lazily, on the policy that already governs the
 `~/.claude/sessions.kb` submodule in `bukzor/dotfiles`.
 
-Appeal: built in, no third tool. GitHub renders the parent as a
-clickable index. Nesting on disk delivers the parent `CLAUDE.md` to
-every sandbox with no per-sandbox wiring.
-
-Cost: one gitlink per sandbox, which graduate and delete must remove.
-Agent-recommended; the user's ruling is pending.
+Rejected because a gitlink is a second record beside the kb record
+(`llm-kb-record.md`), and one that pins a commit nobody wants pinned:
+every child commit makes the parent report the child as modified. The
+one thing submodules offered that nothing else does, GitHub rendering
+the parent as a clickable tree, did not outweigh carrying two records.
