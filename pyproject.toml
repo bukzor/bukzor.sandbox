@@ -18,10 +18,10 @@ bukzor-sandbox-tools = { workspace = true }
 
 [dependency-groups]
 dev = [
+  "basedpyright-as-pyright>=0.1.0",
   "black>=25.1.0",
   "isort>=5.13.2",
   "pre-commit>=4.3.0",
-  "pyright>=1.1.405",
   "pytest>=8.4.2",
   "pyupgrade>=3.19.0",
 ]
