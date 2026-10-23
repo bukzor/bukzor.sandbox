@@ -14,4 +14,4 @@ ontology:
 The major abstractions and how they relate, in the present tense.
 State properties, not mechanisms. A *binding* is whatever makes a
 repo a subordinate of this parent; which mechanism plays that role is
-the rung's open question.
+the rung's first claim (`architecture.kb/binding.md`).
