@@ -1,6 +1,7 @@
 ---
 label: CREATE
 standing: user
+todo: true
 authority:
   address: "nih-tooling-deliberation (6008d1)"
   words: "My rough first draft: - create"
@@ -9,6 +10,7 @@ why:
   - ../components.md
   - ../architecture.kb/binding.kb/llm-kb-record.md
   - ../architecture.kb/collocation.md
+  - ../architecture.kb/hierarchy-on-github.md
   - ../../technical-policy.kb/sandbox-semantics.md
   - ../../technical-policy.kb/exact-string-equality.md
 ---
@@ -25,6 +27,8 @@ on GitHub and on disk alike. For each `PATH`, `create`:
 
 - creates the empty GitHub repository `<name>` with `gh repo create`,
   under `gh`'s default owner, at the given visibility;
+- sets the repository's `SANDBOX_SUBPATH` to the record's directory
+  (`../architecture.kb/hierarchy-on-github.md`);
 - writes the record `PATH.md`;
 - clones the repository into `PATH.git/`.
 

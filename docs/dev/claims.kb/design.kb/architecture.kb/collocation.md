@@ -12,8 +12,8 @@ why:
 # A sandbox's clone sits beside its record file, inside the collection
 
 The clone of a sandbox is a directory beside the file that records it,
-named for the same stem plus `.git`: `sandbox-repo.kb/graphics/opus.md`
-describes the checkout at `sandbox-repo.kb/graphics/opus.git/`. Record
+named for the same stem plus `.git`: `sandbox-repo.kb/llm/prototype.stet.md`
+describes the checkout at `sandbox-repo.kb/llm/prototype.stet.git/`. Record
 and checkout are found by one `ls`, and the hierarchy of the collection
 is the hierarchy on disk.
 

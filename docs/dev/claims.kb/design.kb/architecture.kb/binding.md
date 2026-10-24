@@ -20,6 +20,8 @@ the sandbox's place in the hierarchy, and its frontmatter carries the
 metadata existence cannot.
 
 The candidates, chosen and declined, are in `binding.kb/`. The two
-constraints that decided among them: the hierarchy must be recorded
-somewhere GitHub cannot record it, and nothing in a sandbox may name
-the parent's location.
+constraints that decided among them: the hierarchy has one
+authoritative record, able to nest and to carry free-form metadata,
+and nothing committed in a sandbox may name the parent's location.
+GitHub holds a copy of each sandbox's place, written from the record
+(`hierarchy-on-github.md`).

@@ -9,17 +9,19 @@ authority:
 why:
   - ../components.md
   - ../architecture.kb/binding.kb/llm-kb-record.md
-  - ../../technical-policy.kb/every-sandbox-carries-the-sandbox-topic.md
+  - ../architecture.kb/hierarchy-on-github.md
 ---
 
 # diff
 
 Compares the sandboxes GitHub knows about with the record files in
-`sandbox-repo.kb/`, in both directions: repositories with no record,
-and records whose repository is gone or renamed. GitHub and the
-record are two stores that drift, and this is the reconciliation.
+`sandbox-repo.kb/`, in both directions, and reports:
 
-Which GitHub repositories count as sandboxes on GitHub's side is a
-predicate this verb needs and does not own: the name-prefix
-convention, a topic, or both. The topic question is open
-(`../../technical-policy.kb/every-sandbox-carries-the-sandbox-topic.md`).
+- repositories carrying `SANDBOX_SUBPATH` with no record;
+- records whose repository is gone or renamed;
+- repositories whose `SANDBOX_SUBPATH` differs from their record's
+  directory -- what `push` would change.
+
+GitHub and the record are two stores that drift, and this is the
+reconciliation. On GitHub's side, a sandbox is a repository carrying
+`SANDBOX_SUBPATH` (`../architecture.kb/hierarchy-on-github.md`).

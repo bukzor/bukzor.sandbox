@@ -7,6 +7,7 @@ authority:
   about: "the ledger rendered in chat, this claim signed + within it"
 why:
   - collocation.md
+  - tree-axis.md
   - ../goals.kb/shared-documentation.md
   - ../background.kb/claude-code-loads-ancestor-claude-md.md
   - ../../technical-policy.kb/location-independence.md
@@ -19,6 +20,11 @@ alone. Claude Code loads a `CLAUDE.md` from every ancestor of its
 working directory, and collocation puts every clone below the parent.
 No file inside a sandbox names the parent or its location, so the
 sandbox checked out elsewhere simply sees less, and nothing breaks.
+
+The same holds at every depth: a `CLAUDE.md` in a subject directory
+of `sandbox-repo.kb/` reaches every sandbox beneath it
+(`tree-axis.md`). Shared documentation helps a sandbox and is never
+required by one, so depth adds context without adding a dependency.
 
 The declined mechanism is beside this one
 (`parent-docs-by-import-line.md`).
