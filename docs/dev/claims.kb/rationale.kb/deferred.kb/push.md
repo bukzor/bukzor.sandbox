@@ -7,8 +7,8 @@ authority:
   words: "A `push` would/could update gha's SANDBOX_SUBPATH to match local definitions. -- agreed, and approved."
   about: "a verb writing the record's hierarchy to GitHub"
 why:
-  - ../components.md
-  - ../architecture.kb/hierarchy-on-github.md
+  - ../../design.kb/components.md
+  - hierarchy-on-github.md
   - diff.md
 ---
 

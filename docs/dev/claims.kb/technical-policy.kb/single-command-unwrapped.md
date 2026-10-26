@@ -14,12 +14,10 @@ why:
 
 The parent's tooling adds a subcommand only where the operation is
 several commands that belong together. An operation that is one git
-or gh command is invoked as that command. Two cases are settled:
-
-- Recording child state in the parent is `git commit -a`.
-- Unbinding a sandbox from the parent is `git rm` of its record plus
-  deleting the clone. Deleting the GitHub repository is a separate
-  act, always explicit, never a side effect of unbinding.
+or gh command is invoked as that command. Unbinding is the settled
+case: unbinding a sandbox from the parent is `git rm` of its record
+plus deleting the clone. Deleting the GitHub repository is a separate
+act, always explicit, never a side effect of unbinding.
 
 > [!@bukzor] nih-tooling-deliberation (6008d1)
 > I think git-rm handles this just fine. I don't intend to ever

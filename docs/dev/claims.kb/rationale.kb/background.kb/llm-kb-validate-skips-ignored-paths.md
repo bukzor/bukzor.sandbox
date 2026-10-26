@@ -1,6 +1,8 @@
 ---
 label: LLMKB_SKIPS_IGNORED
 standing: bare
+why:
+  - ../background.md
 verify: "grep -n 'is in submodule\\|def ignored_by_git' ~/.claude/skills/llm-kb/lib/python/llmd/frontmatter_validate.py"
 ---
 

@@ -2,8 +2,8 @@
 label: LIST
 standing: open
 why:
-  - ../components.md
-  - ../architecture.kb/binding.kb/llm-kb-record.md
+  - ../../design.kb/components.md
+  - ../../design.kb/architecture.kb/llm-kb-record.md
 ---
 
 # list

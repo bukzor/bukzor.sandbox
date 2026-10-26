@@ -17,6 +17,5 @@ directory and nesting as deep as the material warrants. A flat
 collection, one directory per sandbox beside every other, is the
 condition this parent exists to improve on.
 
-The GitHub owner page stays flat regardless
-(`../background.kb/github-lists-repos-flat.md`); the hierarchy is a
+The GitHub owner page stays flat regardless; the hierarchy is a
 property of the parent, and only the parent can carry it.

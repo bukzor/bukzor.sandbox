@@ -6,9 +6,9 @@ authority:
   words: "let's prep this repo to host a \"sub-package\" named bukzor-sandbox-tools. I think the going convention is packages/<name> or packages/python/<name>"
   about: "where the parent's tooling lives; the flat form, as built, ratified with 'good work'"
 why:
-  - ../components.md
+  - ../../design.kb/components.md
   - ../../technical-policy.kb/own-scripts.md
-  - ../goals.kb/the-parent-stays-thin.md
+  - ../../design.kb/goals.kb/the-parent-stays-thin.md
 ---
 
 # The tooling is a Python package under `packages/`

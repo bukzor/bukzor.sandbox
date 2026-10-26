@@ -8,9 +8,8 @@ authority:
   about: "the verb that binds an already-existing repository"
 why:
   - ../components.md
-  - ../architecture.kb/binding.kb/llm-kb-record.md
+  - ../architecture.kb/llm-kb-record.md
   - ../architecture.kb/collocation.md
-  - ../architecture.kb/hierarchy-on-github.md
   - ../goals.kb/both-populations.md
 ---
 
@@ -18,9 +17,7 @@ why:
 
 Binds a repository that already exists on GitHub: writes the record
 file at the given path in `sandbox-repo.kb/`, places a checkout beside
-it, cloning afresh or moving an existing checkout, and sets the
-repository's `SANDBOX_SUBPATH` to the record's directory. The record's
-stem is the repository's name. The verb is
-Terraform's, for the same operation: adopting a resource that was
-made elsewhere into the record. It is how the existing prefixed
-siblings migrate in.
+it, cloning afresh or moving an existing checkout. The record's stem
+is the repository's name. The verb is Terraform's, for the same
+operation: adopting a resource that was made elsewhere into the
+record. It is how the existing prefixed siblings migrate in.

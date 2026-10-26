@@ -6,7 +6,6 @@ ontology:
   - goals
   - architecture
   - components
-  - deliverables
 non-claim-tokens:
   - DAG
   - CLAUDE
@@ -16,9 +15,6 @@ non-claim-tokens:
   - README
   - PATH
   - DRAFT
-  - SANDBOX_SUBPATH
-  - API
-  - CI
 stale-when: a rung nothing cites and nothing fills -- the chain was copied rather than chosen, and the stratification wants re-deriving from what this project actually argues about
 ---
 
@@ -29,11 +25,10 @@ What this repo is for and how it is built, kept as a claim ledger
 frontmatter, one theory per collection. Argue with a claim by editing
 its file; the git diff is the strikethrough.
 
-Five rungs. This repo is a parent of throwaway repos, and what it
+Four rungs. This repo is a parent of throwaway repos, and what it
 decides is why it exists, what it adds, what binds a subordinate to
-it, what operations it performs on them, and how the tooling for
-those operations ships. The skill's remaining rung (`requirements`)
-joins when a claim wants it.
+it, and what operations it performs on them. The skill's remaining
+rungs (`requirements`, `deliverables`) join when a claim wants them.
 
 | Rung | The question it answers |
 |---|---|
@@ -41,10 +36,10 @@ joins when a claim wants it.
 | `goals` | How do we accomplish the mission? |
 | `architecture` | What is the parent, and what binds a sandbox to it? |
 | `components` | What operations does the parent perform on its sandboxes? |
-| `deliverables` | How is the tooling built, named, and installed? |
 
-Beside the rungs, `background` holds what the design assumes but does
-not argue: prior art and checkable facts about the tools in play.
+Beside the rungs, `rationale` holds what the design set aside and what
+it assumes. Nothing in the rungs cites it, so the design is complete
+without it.
 
 Priors are a DAG, not a ladder: a claim's `why:` names whatever claims
 it would be revisited over.

@@ -7,9 +7,9 @@ authority:
   words: "do we really want to live with three, four, five dotted-segment repos? ... do we really want to organize by `prototype` etc at the top of our hierarchy? -- agreed, and approved."
   about: "the repository name spelling the record's path, dots for slashes"
 why:
-  - ../hierarchy-on-github.md
-  - ../tree-axis.md
-  - ../../goals.kb/add-organization-remove-none.md
+  - ../deferred.kb/hierarchy-on-github.md
+  - ../../design.kb/architecture.kb/tree-axis.md
+  - ../../design.kb/goals.kb/add-organization-remove-none.md
 ---
 
 # Dotted names: the repository name spells the record's path
@@ -22,8 +22,8 @@ at `prototype/`, `research/`, and so on with no rename.
 
 Rejected because a name's leading segment is its stage, so the tree
 would be keyed by stage, and the tree is keyed by subject
-(`../tree-axis.md`). Subject first would rename every existing
-sandbox, against `../../goals.kb/add-organization-remove-none.md`.
+(`../../design.kb/architecture.kb/tree-axis.md`). Subject first would rename every existing
+sandbox, against `../../design.kb/goals.kb/add-organization-remove-none.md`.
 The scheme's other costs, each smaller:
 
 - Every reorganization is a public rename.

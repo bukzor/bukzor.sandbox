@@ -7,8 +7,7 @@ authority:
   words: "all looks good. approved."
   about: "the ledger rendered in chat, this claim signed + within it"
 why:
-  - ../design.kb/architecture.kb/binding.kb/llm-kb-record.md
-  - ../design.kb/architecture.kb/binding.kb/manifest-and-sync-tool.md
+  - ../design.kb/architecture.kb/llm-kb-record.md
   - single-command-unwrapped.md
 ---
 
@@ -21,8 +20,7 @@ multi-repo tool is a dependency.
 Every surveyed tool in the manifest-and-sync family sells two things:
 a manifest of its own, and status, update, and foreach over it. The
 manifest is what the record already is
-(`../design.kb/architecture.kb/binding.kb/llm-kb-record.md`), so
+(`../design.kb/architecture.kb/llm-kb-record.md`), so
 adopting a tool would mean either a second record or a generated copy
 of the first. The three prewritten operations amount to a short walk
-over the record with `xargs`. The per-tool grounds are in the struck
-candidate (`../design.kb/architecture.kb/binding.kb/manifest-and-sync-tool.md`).
+over the record with `xargs`.

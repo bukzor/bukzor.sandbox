@@ -6,7 +6,7 @@ authority:
   words: "beside the file inside the collection. collocation is a Good Thing"
   about: "where a sandbox's clone lands relative to its record file"
 why:
-  - binding.kb/llm-kb-record.md
+  - llm-kb-record.md
 ---
 
 # A sandbox's clone sits beside its record file, inside the collection

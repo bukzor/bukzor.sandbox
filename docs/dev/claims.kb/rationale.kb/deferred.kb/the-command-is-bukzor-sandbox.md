@@ -3,7 +3,7 @@ label: COMMAND
 standing: agent
 why:
   - tooling-is-a-workspace-package.md
-  - ../components.md
+  - ../../design.kb/components.md
 ---
 
 # The command is `bukzor-sandbox`

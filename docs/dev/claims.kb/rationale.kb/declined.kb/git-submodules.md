@@ -7,8 +7,8 @@ authority:
   words: "all looks good. approved."
   about: "the ledger rendered in chat, this claim struck within it"
 why:
-  - ../binding.md
-  - llm-kb-record.md
+  - ../../design.kb/architecture.kb/binding.md
+  - ../../design.kb/architecture.kb/llm-kb-record.md
 ---
 
 # Git submodules, with lazily bumped pointers
@@ -18,7 +18,7 @@ pointer bumped lazily, on the policy that already governs the
 `~/.claude/sessions.kb` submodule in `bukzor/dotfiles`.
 
 Rejected because a gitlink is a second record beside the kb record
-(`llm-kb-record.md`), and one that pins a commit nobody wants pinned:
+(`../../design.kb/architecture.kb/llm-kb-record.md`), and one that pins a commit nobody wants pinned:
 every child commit makes the parent report the child as modified. The
 one thing submodules offered that nothing else does, GitHub rendering
 the parent as a clickable tree, did not outweigh carrying two records.

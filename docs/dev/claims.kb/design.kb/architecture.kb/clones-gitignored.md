@@ -8,7 +8,6 @@ authority:
   about: "a scoped gitignore of *.git/ in sandbox-repo.kb, matching the <name>.git clone convention"
 why:
   - collocation.md
-  - ../background.kb/llm-kb-validate-skips-ignored-paths.md
   - ../goals.kb/the-parent-stays-thin.md
 ---
 
@@ -22,12 +21,11 @@ skips the clones.
 The ignore is needed even though git treats an untracked nested repo
 as one opaque entry. Without it, `git add -A` in the parent records
 the clone as an embedded-repo pointer, with only a warning, and the
-validator walks into the clone and reports its kb as the parent's
-(`../background.kb/llm-kb-validate-skips-ignored-paths.md`).
+validator walks into the clone and reports its kb as the parent's.
 
 A consequence worth knowing: tools that honor gitignore, Claude Code's
 search among them, do not see sandbox contents from the parent. Search
-across sandboxes goes through `foreach`, or starts inside a sandbox.
+across sandboxes walks the record, or starts inside a sandbox.
 
 Probed 2026-10-23 in a scratch repo with clones at three depths:
 status, `git add -A`, the validator, and `rg` all saw records only,

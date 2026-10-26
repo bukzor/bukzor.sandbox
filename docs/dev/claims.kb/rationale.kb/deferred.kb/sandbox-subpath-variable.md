@@ -6,9 +6,9 @@ authority:
   words: "what if we additional-purposed actions variables to contain a ... \"sandbox-subpath\" ... I'm just examining whether we can find a \"onto\" mapping from our filesystem to github data. -- agreed, and approved."
   about: "an Actions variable holding each sandbox's place, against dotted names"
 why:
-  - ../hierarchy-on-github.md
-  - ../tree-axis.md
-  - ../../../technical-policy.kb/exact-string-equality.md
+  - hierarchy-on-github.md
+  - ../../design.kb/architecture.kb/tree-axis.md
+  - ../../technical-policy.kb/exact-string-equality.md
 ---
 
 # An Actions variable, `SANDBOX_SUBPATH`, holds the record's directory
@@ -22,12 +22,12 @@ carries `SANDBOX_SUBPATH=llm`.
   untouched, so a value carrying the name would go stale at every
   graduation.
 - **`.` at the top of the tree**, the filesystem's own name for the
-  current directory (`../../../technical-policy.kb/reuse-preexisting-semantics.md`).
+  current directory (`../../technical-policy.kb/reuse-preexisting-semantics.md`).
 - **Underscores in the name**, because variable names admit only
   letters, digits, and underscores, case-insensitively, and must not
   begin with a digit or `GITHUB_`; the
   difference from the hyphenated spelling is forced
-  (`../../../technical-policy.kb/exact-string-equality.md`).
+  (`../../technical-policy.kb/exact-string-equality.md`).
 
 Actions variables exist to configure CI, and this use is arguably an
 abuse. It is the one key-value store a personal account's repository

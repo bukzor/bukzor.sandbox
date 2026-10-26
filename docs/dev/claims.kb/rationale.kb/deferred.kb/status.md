@@ -7,8 +7,8 @@ authority:
   words: "status -- show if local is out of date"
   about: "the minimal set of verbs for sandbox repos"
 why:
-  - ../components.md
-  - ../architecture.kb/collocation.md
+  - ../../design.kb/components.md
+  - ../../design.kb/architecture.kb/collocation.md
 ---
 
 # status

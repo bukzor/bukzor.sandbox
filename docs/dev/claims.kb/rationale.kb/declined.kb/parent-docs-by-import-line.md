@@ -8,7 +8,7 @@ authority:
   about: "a sandbox CLAUDE.md whose first line imports the parent's CLAUDE.md by absolute path"
 why:
   - ../../technical-policy.kb/location-independence.md
-  - ../goals.kb/shared-documentation.md
+  - ../../design.kb/goals.kb/shared-documentation.md
 ---
 
 # A sandbox CLAUDE.md importing the parent's by path

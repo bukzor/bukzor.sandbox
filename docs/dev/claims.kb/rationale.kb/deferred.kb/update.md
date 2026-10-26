@@ -2,7 +2,7 @@
 label: UPDATE
 standing: open
 why:
-  - ../components.md
+  - ../../design.kb/components.md
   - foreach.md
 ---
 

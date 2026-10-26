@@ -4,7 +4,7 @@ standing: user
 authority:
   address: "sandbox-create (f39ab32c)"
   words: "agreed, and approved."
-  about: "the proposal in chat: the tree keyed by subject, stage kept in the name, SANDBOX_SUBPATH written to GitHub by push, dotted names declined"
+  about: "the proposal in chat, its part that keys the tree by subject and keeps stage in the name"
 why:
   - ../goals.kb/hierarchy.md
   - ../goals.kb/shared-documentation.md

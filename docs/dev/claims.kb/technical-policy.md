@@ -10,7 +10,6 @@ non-claim-tokens:
   - CI
   - README
   - DRAFT
-  - SANDBOX_SUBPATH
 ---
 
 # bukzor.sandbox -- technical policy

@@ -2,7 +2,7 @@
 label: BACKGROUND
 standing: bare
 why:
-  - ../design.md
+  - ../rationale.md
 ---
 
 # Background

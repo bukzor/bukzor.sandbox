@@ -1,10 +1,9 @@
 ---
 label: PUBLICATION_IN_CONFIG
 standing: agent
-force: should
 why:
-  - ../design.kb/deliverables.kb/tooling-is-a-workspace-package.md
-  - ../design.kb/goals.kb/graduation-is-a-rename.md
+  - tooling-is-a-workspace-package.md
+  - ../../design.kb/goals.kb/graduation-is-a-rename.md
 ---
 
 # Whether a package is published is its own configuration
@@ -20,5 +19,5 @@ Separate trees for local and published packages would make a first
 release a directory move, and a move renames every path that cites
 the package: workspace sources, README links, CI tag matching.
 Graduation in this design is a rename and nothing more
-(`../design.kb/goals.kb/graduation-is-a-rename.md`); a package's
+(`../../design.kb/goals.kb/graduation-is-a-rename.md`); a package's
 graduation to published should cost one line.

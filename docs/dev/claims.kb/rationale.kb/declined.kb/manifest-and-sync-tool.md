@@ -7,9 +7,9 @@ authority:
   words: "all looks good. approved."
   about: "the ledger rendered in chat, each tool struck within it"
 why:
-  - ../binding.md
-  - llm-kb-record.md
-  - ../../goals.kb/hierarchy.md
+  - ../../design.kb/architecture.kb/binding.md
+  - ../../design.kb/architecture.kb/llm-kb-record.md
+  - ../../design.kb/goals.kb/hierarchy.md
 ---
 
 # A manifest plus a multi-repo tool
@@ -18,7 +18,7 @@ The parent would hold a manifest in some tool's format, and the tool
 would clone, list, and run commands across the set.
 
 Rejected as a family: every member is a second record beside the kb
-record (`llm-kb-record.md`), carrying less per entry than a kb file
+record (`../../design.kb/architecture.kb/llm-kb-record.md`), carrying less per entry than a kb file
 can, in exchange for three prewritten operations that are a short
 `xargs` walk over the kb. Per tool, as of 2026-10-23:
 
