@@ -1,0 +1,2 @@
+# every clone, at any depth: <name>.git/ beside its record <name>.md
+*.git/

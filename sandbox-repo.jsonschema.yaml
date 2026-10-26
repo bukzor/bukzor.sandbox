@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+title: sandbox record frontmatter
+description: >-
+  One file per sandbox. Frontmatter carries what the file's existence
+  cannot; further free-form fields are allowed.
+type: object
+required:
+  - url
+properties:
+  url:
+    description: The sandbox's GitHub URL, as `gh repo create` reports it.
+    type: string

@@ -9,6 +9,18 @@ them. No experiment lives here directly.
 | --------------------------------- | ------------------------------------------------- |
 | `docs/dev/claims.kb/`             | the design, as a claim ledger (`Skill(llm-claims-kb)`) |
 | `packages/bukzor-sandbox-tools/`  | the `bukzor-sandbox` command                      |
+| `sandbox-repo.kb/`                | one record per sandbox; each clone sits beside its record |
+
+## Use
+
+```bash
+uv sync
+bukzor-sandbox create --private -p sandbox-repo.kb/llm/foo
+```
+
+That makes the GitHub repository `foo`, the record
+`sandbox-repo.kb/llm/foo.md`, and the clone `sandbox-repo.kb/llm/foo.git/`.
+The record is left unstaged; commit it like any file.
 
 ## Develop
 

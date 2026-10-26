@@ -1,7 +1,6 @@
 ---
 label: CLONES_IGNORED
 standing: user
-todo: true
 authority:
   address: "nih-tooling-deliberation (6008d1)"
   words: "adopted."
