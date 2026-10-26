@@ -16,7 +16,17 @@ them. No experiment lives here directly.
 uv sync
 uv run pre-commit install
 uv run pre-commit run --all-files
+
+# required before editing docs/dev/claims.kb/: the ledger's validators
+uv tool install --editable ~/.claude/skills/llm-kb
+uv tool install --editable ~/.claude/skills/llm-claims-kb
 ```
+
+The ledger tools (`llm.kb-validate`, `llm-claims-kb-mentions`,
+`llm-claims-kb-ownership --trespass`, ...) install as uv tools, not
+into `.venv`: `uv sync` removes from `.venv` whatever the lockfile
+does not list, and the lockfile cannot list them, because their source
+lives outside this repo, where CI has no copy.
 
 One package per tool under `packages/`, each independently buildable;
 the root `pyproject.toml` is the uv workspace that ties them together
