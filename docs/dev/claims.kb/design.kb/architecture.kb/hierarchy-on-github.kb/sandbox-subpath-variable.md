@@ -24,7 +24,8 @@ carries `SANDBOX_SUBPATH=llm`.
 - **`.` at the top of the tree**, the filesystem's own name for the
   current directory (`../../../technical-policy.kb/reuse-preexisting-semantics.md`).
 - **Underscores in the name**, because variable names admit only
-  `[A-Z0-9_]` and must not begin with a digit or `GITHUB_`; the
+  letters, digits, and underscores, case-insensitively, and must not
+  begin with a digit or `GITHUB_`; the
   difference from the hyphenated spelling is forced
   (`../../../technical-policy.kb/exact-string-equality.md`).
 

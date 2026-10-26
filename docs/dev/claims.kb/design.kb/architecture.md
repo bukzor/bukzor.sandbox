@@ -3,8 +3,6 @@ label: ARCHITECTURE
 standing: agent
 why:
   - goals.md
-ontology:
-  - binding
 ---
 
 # Architecture
